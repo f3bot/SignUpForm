@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    display: flex;
+}
+
+.container1{
+    float: left;
+    border: 1px solid green;
+    height: 100%;
+    width: 35%;
+}
+
+.container2{
+    float: right;
+    border: 1px solid brown;
+    height: 100%;
+    width: 65%;
+}
