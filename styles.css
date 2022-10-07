@@ -1,160 +1,258 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    max-width: 200vh;
-    max-height: 100vh;
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
 }
 
-body{
-    height: 100vh;
-    width: auto;
-    border-bottom: 5px solid black;
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
 }
+.container1mobile{
+    display: none;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    max-height: 100vh;
+    max-width: 100vw;
+}
+
 
 .main{
     display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.logo{
+    background-image: url(/images/main.jpg);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 34vw;
+    height: 100vh;
+}
+
+.imgdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 22vh;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.space{
+    overflow: hidden;
+    display: flex;
+    height: 15vh;
 }
 
 .container1{
     float: left;
-    height: 100vh;
-    width: 42%;
+    height: 100%;
+    width: 34%;
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
 }
+
+
 
 .container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
     float: right;
     height: 100vh;
-    width: 58%;
+    width: 66%;
     background-color: black;
-    color: white;
-    padding-left: 2%;
+    color: rgb(72, 72, 72);
     padding-right: 10%;
-    max-height: 100vh;
-
-    
+    padding-left: 2%;
 }
 
-.notreal{
-    font-size: 36px;
-    text-align: center;
-}
 
-.notrealunder{
-    font-size: 24px;
-    text-align: center;
-}
-
-.s1{
+.c2c1{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20%;
+    padding-bottom: 10%;
 }
 
-.s2{
+.c2c2{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5%;
 }
 
-.s2a1{
-    font-size: 24px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.bigimg{
-    height: 100vh;
-    width: 100%;
-}
-
-.s3{
+.c2c3{
     display: flex;
     flex-direction: column;
-    gap: 70px;
-    margin-top: 7%;
+    gap: 5px;
 }
 
-.s3cont{
+.c2container{
     display: flex;
-    justify-content:space-evenly;
-    align-items: center;
-    
+    justify-content: flex-start;
+    gap: 40px;
+
 }
 
-.cont{
+.c2text{
+    padding-top: 5%;
+}
+
+.input1{
     display: flex;
     flex-direction: column;
-
+    gap: 2px;
 }
 
-.conttext{
-    color: #5a5d5f;
+.big{
+    font-size: 20px;
 }
 
 .input{
-    background-color: black;
-    border-radius: 5px ;
-    color: white;
+    background-color: rgb(28, 29, 29);
+    border: 1px solid rgb(28, 29, 29);
+    border-radius: 5px;
+    flex-flow: column wrap;
+    width: 20vw;
+    height: 2vh;
+    max-width: 100%;
+}
+
+
+.inputtext{
+    color: rgb(93, 96, 96);
+    font-size: 8px;
+}
+
+.c2c4{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.c2div2{
+    display: flex;
+    gap: 40px;
 }
 
 .create{
-    width: 18rem;
-    height: 5rem;
     background-color: black;
+    border: 2px solid purple;
+    border-radius: 5px;
     color: purple;
-    border: 3px solid purple;
-    border-radius: 15px;
-    font-size: 24px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 20px;
+    position: inherit;
 }
 
 .create:hover{
     background-color: purple;
+    border: 2px solid purple;
+    border-radius: 5px;
     color: black;
 }
 
-.account{
+.c2t2:hover{
+    color:purple;
+}
+
+.bigimg{
+    max-width: 100%;
+    height: 100vh;
+}
+
+.container3{
+    padding-right: 1%;
     display: flex;
-    gap: 20px;
+    background-color: black;
 }
 
-.login{
-    color: purple;
-}
-
-.creatediv{
+.navbar{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 40px;
 }
 
-.accdiv{
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
+
+.navimg{
+    width: 50px;
+    height: 50px;
 }
 
-.login:hover{
-    color: white;
-}
+@media only screen and (max-width:600px){
+    .container1{
+        display: none;
+    }
+    .container1mobile{
+        display: unset;
+    }
+    .logomobile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        overflow: hidden;
+        display: flex;
+        height: 10vh !important;
+        width: 100vw !important;
+        background-image: url(/images/index.png);
+        opacity: 0.7;
+    }
+    .spacemobile{
+        width: 15%;
+    }
+    .spacetext{
+        font-size: 40px;
+        color: white;
+    }
+    .container3{
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+        position: absolute;
+        bottom: 0;
 
-@media only screen and (max-width: 900px) {
+        width: 100%;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: row !important;
+        justify-content: center;
+        align-items: center;
+    }
+    .container2{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 !important;
+        margin: 0 !important;
+    }   
+    .c2c1{
+        text-align: center;
+    }
+    .input1{
+        width: 40vw;
+    }
     .input{
-        width: 50%;
-        height: 25px;
+        width: auto;
     }
-    .create{
-        width: 50%;
+    .inputtext{
+        font-size: 10px;
     }
-}
-@media only screen and (max-width: 600px) {
-    .row {
-        grid-template-columns: auto;
-        
+
+    .c2div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
