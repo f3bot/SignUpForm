@@ -120,14 +120,14 @@ body {
     border-radius: 5px;
     flex-flow: column wrap;
     width: 20vw;
-    height: 2vh;
+    height: 3vh;
     max-width: 100%;
+    color: rgb(82, 76, 76);
 }
-
 
 .inputtext{
     color: rgb(93, 96, 96);
-    font-size: 8px;
+    font-size: 10px;
 }
 
 .c2c4{
@@ -146,10 +146,14 @@ body {
     border: 2px solid purple;
     border-radius: 5px;
     color: purple;
-    width: fit-content;
-    height: fit-content;
-    font-size: 20px;
+    min-width: fit-content;
+    min-height: fit-content;
+    width: 25%;
+    height: 4rem;
+    font-size: 26px;
+    font-weight: 900;
     position: inherit;
+    opacity: 0.6;
 }
 
 .create:hover{
@@ -157,6 +161,8 @@ body {
     border: 2px solid purple;
     border-radius: 5px;
     color: black;
+    opacity: 1;
+    transition: 0.5s;
 }
 
 .c2t2:hover{
